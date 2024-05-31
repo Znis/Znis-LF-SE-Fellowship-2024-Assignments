@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -97,6 +98,7 @@ aside {
 .display-picture img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .quote-wrapper {
