@@ -19,172 +19,235 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/aside-section.css" />
+    <link rel="stylesheet" href="./styles/latest-projects-section.css" />
+    <link rel="stylesheet" href="./styles/experience-section.css" />
+    <link rel="stylesheet" href="./styles/education-section.css" />
+    <link rel="stylesheet" href="./styles/skills-section.css" />
+    <link rel="stylesheet" href="./styles/tools-section.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css" />
+
     <title>Portfolio</title>
   </head>
 
   <body>
-    <aside>
-      <figure class="display-picture">
-        <img src="images/profile-photo.svg" alt="Profile Photo" />
+    <aside class="aside-section">
+      <figure class="aside-section__picture-wrapper">
+        <img
+          src="images/profile-photo.png"
+          alt="Profile Photo"
+          class="aside-section__picture"
+        />
       </figure>
-      <div class="aside-container">
-        <div class="intro">
-          <p class="name">Chiara Bianchi</p>
-          <p class="role">Product Designer</p>
+      <div class="aside-section__container">
+        <div class="aside-section__intro">
+          <p class="aside-section__name">Chiara Bianchi</p>
+          <p class="aside-section__role">Product Designer</p>
         </div>
-        <div class="quote-wrapper">
-          <div class="quote">
-            <div class="quote-text">
-              <figure class="apostrophe-start">
+        <div class="aside-section__quote-wrapper">
+          <div class="aside-section__quote">
+            <div class="aside-section__quote-text">
+              <figure class="aside-section__apostrophe-start">
                 <img
                   src="images/apostrophe-start.svg"
                   alt="Apostrophe Start"
-                  class="apostrophe-img"
+                  class="aside-section__apostrophe-img"
                 />
               </figure>
               <p>Design isn't finished until somebody is using it.</p>
-              <figure class="apostrophe-end">
+              <figure class="aside-section__apostrophe-end">
                 <img
                   src="images/apostrophe-end.svg"
                   alt="Apostrophe End"
-                  class="apostrophe-img"
+                  class="aside-section__apostrophe-img"
                 />
               </figure>
             </div>
-            <p class="text-title quote-author">Brenda Laurel</p>
+            <p class="light-text aside-section__quote-author">Brenda Laurel</p>
           </div>
         </div>
 
-        <div class="horizontal-bar"></div>
-        <div class="contact">
-          <div class="row1">
-            <div class="info-div">
-              <div class="icon-circle">
-                <img src="images/email-icon.svg" alt="Email Icon" />
+        <div class="aside-section__horizontal-bar"></div>
+
+        <div class="aside-section__contact">
+          <div class="contact__top-row">
+            <div class="contact__info-div">
+              <div class="contact__icon-circle">
+                <img
+                  src="images/email-icon.svg"
+                  alt="Email Icon"
+                  class="contact__icon"
+                />
               </div>
-              <div class="info">
-                <p class="text-title">Email</p>
+              <div class="contact__info">
+                <p class="light-text">Email</p>
                 <p class="text-content">chiara.bianchi@gmail.com</p>
               </div>
             </div>
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/website-icon.svg" alt="Website Icon" />
+
+            <div class="contact__info-div">
+              <figure class="contact__icon-circle">
+                <img
+                  src="images/website-icon.svg"
+                  alt="Website Icon"
+                  class="contact__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Website</p>
+              <div class="contact__info">
+                <p class="light-text">Website</p>
                 <p class="text-content">https://aidesign.it</p>
               </div>
             </div>
           </div>
-          <div class="row2">
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/phone-icon.svg" alt="Phone Icon" />
+          <div class="contact__bottom-row">
+            <div class="contact__info-div">
+              <figure class="contact__icon-circle">
+                <img
+                  src="images/phone-icon.svg"
+                  alt="Phone Icon"
+                  class="contact__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Phone</p>
+              <div class="contact__info">
+                <p class="light-text">Phone</p>
                 <p class="text-content">(+39) 333 0123 765</p>
               </div>
             </div>
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/location-icon.svg" alt="Location Icon" />
+            <div class="contact__info-div">
+              <figure class="contact__icon-circle">
+                <img
+                  src="images/location-icon.svg"
+                  alt="Location Icon"
+                  class="contact__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Address</p>
+              <div class="contact__info">
+                <p class="light-text">Address</p>
                 <p class="text-content">Bologna, Italy</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="horizontal-bar"></div>
-        <div class="socials">
-          <p class="category-title">Socials</p>
-          <div class="row1">
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/instagram.svg" alt="Instagram Icon" />
+        <div class="aside-section__horizontal-bar"></div>
+        <div class="aside-section__socials">
+          <p class="aside-section__category-title">Socials</p>
+          <div class="socials__top-row">
+            <div class="socials__info-div">
+              <figure class="socials__icon-circle">
+                <img
+                  src="images/instagram.svg"
+                  alt="Instagram Icon"
+                  class="socials__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Instagram</p>
+              <div class="socials__info">
+                <p class="light-text">Instagram</p>
                 <p class="text-content">@chiara.designs</p>
               </div>
             </div>
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/dribble.svg" alt="Dribble Icon" />
+            <div class="socials__info-div">
+              <figure class="socials__icon-circle">
+                <img
+                  src="images/dribble.svg"
+                  alt="Dribble Icon"
+                  class="socials__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Dribble</p>
+              <div class="socials__info">
+                <p class="light-text">Dribble</p>
                 <p class="text-content">@chiara-designs</p>
               </div>
             </div>
           </div>
-          <div class="row2">
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/twitter.svg" alt="Twitter Icon" />
+          <div class="socials__bottom-row">
+            <div class="socials__info-div">
+              <figure class="socials__icon-circle">
+                <img
+                  src="images/twitter.png"
+                  alt="Twitter Icon"
+                  class="socials__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Twitter</p>
+              <div class="socials__info">
+                <p class="light-text">Twitter</p>
                 <p class="text-content">@chiaradesigns</p>
               </div>
             </div>
-            <div class="info-div">
-              <figure class="icon-circle">
-                <img src="images/linkedin.svg" alt="Linkedin Icon" />
+            <div class="socials__info-div">
+              <figure class="socials__icon-circle">
+                <img
+                  src="images/linkedin.png"
+                  alt="Linkedin Icon"
+                  class="socials__icon"
+                />
               </figure>
-              <div class="info">
-                <p class="text-title">Linkedin</p>
+              <div class="socials__info">
+                <p class="light-text">Linkedin</p>
                 <p class="text-content">chiara-bianchi-123</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="horizontal-bar"></div>
+        <div class="aside-section__horizontal-bar"></div>
 
-        <div class="languages">
-          <p class="category-title">Languages</p>
-          <div class="row1">
-            <div class="info-div">
-              <figure class="flag-icon">
-                <img src="images/italy-flag.svg" alt="Italy Flag" />
+        <div class="aside-section__languages">
+          <p class="aside-section__category-title">Languages</p>
+          <div class="languages__top-row">
+            <div class="languages__info-div">
+              <figure class="languages__icon-wrapper">
+                <img
+                  src="images/italy-flag.svg"
+                  alt="Italy Flag"
+                  class="languages__icon"
+                />
               </figure>
-              <div class="info">
+              <div class="languages__info">
                 <p class="text-content">Italian</p>
-                <p class="text-title">Native</p>
+                <p class="light-text">Native</p>
               </div>
             </div>
 
-            <div class="info-div">
-              <figure class="flag-icon">
-                <img src="images/greece-flag.svg" alt="Greece Flag" />
+            <div class="languages__info-div">
+              <figure class="languages__icon-wrapper">
+                <img
+                  src="images/greece-flag.svg"
+                  alt="Greece Flag"
+                  class="languages__icon"
+                />
               </figure>
-              <div class="info">
+              <div class="languages__info">
                 <p class="text-content">Greek</p>
-                <p class="text-title">Native</p>
+                <p class="light-text">Native</p>
               </div>
             </div>
           </div>
-          <div class="row2">
-            <div class="info-div">
-              <figure class="flag-icon">
-                <img src="images/uk-flag.svg" alt="UK Flag" />
+          <div class="languages__bottom-row">
+            <div class="languages__info-div">
+              <figure class="languages__icon-wrapper">
+                <img
+                  src="images/uk-flag.svg"
+                  alt="UK Flag"
+                  class="languages__icon"
+                />
               </figure>
-              <div class="info">
+              <div class="languages__info">
                 <p class="text-content">English</p>
-                <p class="text-title">Professional working</p>
+                <p class="light-text">Professional working</p>
               </div>
             </div>
-            <div class="info-div">
-              <figure class="flag-icon">
-                <img src="images/spain-flag.svg" alt="Spain Flag" />
+            <div class="languages__info-div">
+              <figure class="languages__icon-wrapper">
+                <img
+                  src="images/spain-flag.svg"
+                  alt="Spain Flag"
+                  class="languages__icon"
+                />
               </figure>
-              <div class="info">
+              <div class="languages__info">
                 <p class="text-content">Spanish</p>
-                <p class="text-title">Elementary</p>
+                <p class="light-text">Elementary</p>
               </div>
             </div>
           </div>
@@ -195,56 +258,78 @@
       <div class="content">
         <div class="main-wrapper">
           <div class="timeline">
-            <figure class="timeline-icon">
-              <img src="images/timeline-icon.svg" alt="Timeline Icon" />
+            <figure class="timeline__icon-wrapper">
+              <img
+                src="images/timeline-icon.png"
+                alt="Timeline Icon"
+                class="timeline__icon"
+              />
             </figure>
-            <div class="vertical-bar"></div>
+            <div class="timeline__vertical-bar"></div>
           </div>
           <div class="latest-projects">
-            <p class="heading">Latest Projects</p>
-            <div class="project-wrapper">
+            <p class="latest-projects__heading">Latest Projects</p>
+            <div class="latest-projects__project-wrapper">
               <div class="project-card">
-                <div class="project-info">
-                  <figure class="project-icon">
-                    <img src="images/figma-logo.svg" alt="Figma Logo" />
+                <div class="project-card__project-info">
+                  <figure class="project-card__project-icon-wrapper">
+                    <img
+                      src="images/figma-logo.svg"
+                      alt="Figma Logo"
+                      class="project-card__project-icon"
+                    />
                   </figure>
-                  <div class="project-content">
-                    <p class="project-title">Powerful Design System</p>
-                    <p class="project-description">
+                  <div class="project-card__project-content">
+                    <p class="project-card__project-title">
+                      Powerful Design System
+                    </p>
+                    <p class="project-card__project-description">
                       Figma UI Kit and Design System targeting a wide variety of
                       use cases.
                     </p>
                   </div>
                 </div>
-                <div class="project-link">
-                  <figure class="project-a-icon">
-                    <img src="images/project-figma.svg" alt="Figma Icon" />
+                <div class="project-card__project-link-wrapper">
+                  <figure class="project-card__project-link-icon-wrapper">
+                    <img
+                      src="images/project-figma.svg"
+                      alt="Figma Icon"
+                      class="project-card__project-link-icon"
+                    />
                   </figure>
                   <a
                     href="https://www.figma.com/@angelolibero"
-                    class="project-a"
+                    class="project-card__project-link"
                     >https://figma.com</a
                   >
                 </div>
               </div>
               <div class="project-card">
-                <div class="project-info">
-                  <figure class="project-icon">
-                    <img src="images/lightning.svg" alt="Lightning Logo" />
+                <div class="project-card__project-info">
+                  <figure class="project-card__project-icon-wrapper">
+                    <img
+                      src="images/lightning.svg"
+                      alt="Lightning Logo"
+                      class="project-card__project-icon"
+                    />
                   </figure>
-                  <div class="project-content">
-                    <p class="project-title">Modern Website</p>
-                    <p class="project-description">
+                  <div class="project-card__project-content">
+                    <p class="project-card__project-title">Modern Website</p>
+                    <p class="project-card__project-description">
                       Powerful website - dashboard template for your next Chakra
                       UI project.
                     </p>
                   </div>
                 </div>
-                <div class="project-link">
-                  <figure class="project-a-icon">
-                    <img src="images/project-link.svg" alt="Link Logo" />
+                <div class="project-card__project-link-wrapper">
+                  <figure class="project-card__project-link-icon-wrapper">
+                    <img
+                      src="images/project-link.svg"
+                      alt="Link Logo"
+                      class="project-card__project-link-icon"
+                    />
                   </figure>
-                  <a href="https://ui-8.net/" class="project-a"
+                  <a href="https://ui-8.net/" class="project-card__project-link"
                     >https://ui-8.net</a
                   >
                 </div>
@@ -254,209 +339,300 @@
         </div>
         <div class="main-wrapper">
           <div class="timeline">
-            <figure class="timeline-icon">
-              <img src="images/timeline-icon.svg" alt="Timeline Logo" />
+            <figure class="timeline__icon-wrapper">
+              <img
+                src="images/timeline-icon.png"
+                alt="Timeline Logo"
+                class="timeline__icon"
+              />
             </figure>
-            <div class="vertical-bar"></div>
+            <div class="timeline__vertical-bar"></div>
           </div>
           <div class="experience">
-            <p class="heading">Experience</p>
-            <div class="experience-wrapper">
-              <ul>
-                <li>
-                  <div class="experience-item">
-                    <div class="experience-metainfo">
-                      <div class="date-location">
-                        <p class="extra-light-text date-color">
-                          Jul 20 - Jan 2022
-                        </p>
-                        <figure class="experience-a-icon">
-                          <img
-                            src="images/experience-location.svg"
-                            alt="Experience Location"
-                          />
-                        </figure>
-                        <p class="extra-light-text location-color">Cupertino</p>
-                      </div>
-                      <div class="experience-info">
-                        <figure class="experience-icon">
-                          <img src="images/apple.svg" alt="Apple Logo" />
-                        </figure>
-                        <div class="experience-content">
-                          <p class="light-text">Product Designer</p>
-                          <p class="dark-text">Apple</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="experience-description">
-                      <p class="extra-light-text">
-                        Omnis minima inventore minus. Aut et incidunt. Aut
-                        fugiat culpa illum optio dolorum aut maxime ipsa.
-                        Laborum incidunt enim consectetur perspiciatis. Dolore
-                        ullam dolor impedit dolorum recusandae facilis quo et.
-                        Et ipsam vel sunt qui ut officia voluptatem.
+            <p class="experience__heading">Experience</p>
+
+            <div class="experience__experience-wrapper">
+              <div class="experience-item">
+                <div class="experience-item__timeline">
+                  <figure class="experience-item__timeline-icon-wrapper">
+                    <img
+                      src="images/timeline-icon.png"
+                      alt="Timeline Logo"
+                      class="experience-item__timeline-icon"
+                    />
+                  </figure>
+                  <div class="experience-item__timeline-vertical-bar"></div>
+                </div>
+                <div class="experience-item__container">
+                  <div class="experience-item__metainfo">
+                    <div class="experience-item__date-location">
+                      <p class="extra-light-text experience-item__date-color">
+                        Jul 20 - Jan 2022
+                      </p>
+                      <figure class="experience-item__location-icon-wrapper">
+                        <img
+                          src="images/experience-location.svg"
+                          alt="Experience Location"
+                          class="experience-item__location-icon"
+                        />
+                      </figure>
+                      <p
+                        class="extra-light-text experience-item__location-color"
+                      >
+                        Cupertino
                       </p>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="experience-item">
-                    <div class="experience-metainfo">
-                      <div class="date-location">
-                        <p class="extra-light-text date-color">
-                          Oct 2015 - Mar 2020
-                        </p>
-                        <figure class="experience-a-icon">
-                          <img
-                            src="images/experience-location.svg"
-                            alt="Experience Location"
-                          />
-                        </figure>
-                        <p class="extra-light-text location-color">Austin</p>
-                      </div>
-                      <div class="experience-info">
-                        <figure class="experience-icon">
-                          <img src="images/tesla.svg" alt="Tesla Logo" />
-                        </figure>
-                        <div class="experience-content">
-                          <p class="light-text">UX Designer</p>
-                          <p class="dark-text">Tesla</p>
-                        </div>
+                    <div class="experience-item__info">
+                      <figure class="experience-item__icon-wrapper">
+                        <img
+                          src="images/apple.svg"
+                          alt="Apple Logo"
+                          class="experience-item__icon"
+                        />
+                      </figure>
+                      <div class="experience-item__content">
+                        <p class="light-text">Product Designer</p>
+                        <p class="dark-text">Apple</p>
                       </div>
                     </div>
-                    <div class="experience-description">
-                      <p class="extra-light-text">
-                        Commodi atque sit ut qui assumenda earum aperiam
-                        occaecati voluptates. Fuga quas aut soluta nostrum et
-                        beatae. Maiores repudiandae quibusdam autem enim ut in
-                        possimus ad
+                  </div>
+                  <div class="experience-item__description">
+                    <p class="extra-light-text">
+                      Omnis minima inventore minus. Aut et incidunt. Aut fugiat
+                      culpa illum optio dolorum aut maxime ipsa. Laborum
+                      incidunt enim consectetur perspiciatis. Dolore ullam dolor
+                      impedit dolorum recusandae facilis quo et. Et ipsam vel
+                      sunt qui ut officia voluptatem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-item__timeline">
+                  <figure class="experience-item__timeline-icon-wrapper">
+                    <img
+                      src="images/timeline-icon.png"
+                      alt="Timeline Logo"
+                      class="experience-item__timeline-icon"
+                    />
+                  </figure>
+                  <div class="experience-item__timeline-vertical-bar"></div>
+                </div>
+                <div class="experience-item__container">
+                  <div class="experience-item__metainfo">
+                    <div class="experience-item__date-location">
+                      <p class="extra-light-text experience-item__date-color">
+                        Oct 2015 - Mar 2020
+                      </p>
+                      <figure class="experience-item__location-icon-wrapper">
+                        <img
+                          src="images/experience-location.svg"
+                          alt="Experience Location"
+                          class="experience-item__location-icon"
+                        />
+                      </figure>
+                      <p
+                        class="extra-light-text experience-item__location-color"
+                      >
+                        Austin
                       </p>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="experience-item">
-                    <div class="experience-metainfo">
-                      <div class="date-location">
-                        <p class="extra-light-text date-color">
-                          Sep 2014 - Aug 2015
-                        </p>
-                        <figure class="experience-a-icon">
-                          <img
-                            src="images/experience-location.svg"
-                            alt="Experience Location"
-                          />
-                        </figure>
-                        <p class="extra-light-text location-color">
-                          Mountain View
-                        </p>
-                      </div>
-                      <div class="experience-info">
-                        <figure class="experience-icon">
-                          <img src="images/google.svg" alt="Google Icon" />
-                        </figure>
-                        <div class="experience-content">
-                          <p class="light-text">Design System Architect</p>
-                          <p class="dark-text">Google</p>
-                        </div>
+                    <div class="experience-item__info">
+                      <figure class="experience-item__icon-wrapper">
+                        <img
+                          src="images/tesla.png"
+                          alt="Tesla Logo"
+                          class="experience-item__icon"
+                        />
+                      </figure>
+                      <div class="experience-item__content">
+                        <p class="light-text">UX Designer</p>
+                        <p class="dark-text">Tesla</p>
                       </div>
                     </div>
-                    <div class="experience-description">
-                      <p class="extra-light-text">
-                        Ut molestias animi. Neque voluptate velit corporis
-                        adipisci voluptate et qui sed neque. Inventore eos non.
-                        Qui eveniet quo incidunt nemo.
+                  </div>
+                  <div class="experience-item__description">
+                    <p class="extra-light-text">
+                      Commodi atque sit ut qui assumenda earum aperiam occaecati
+                      voluptates. Fuga quas aut soluta nostrum et beatae.
+                      Maiores repudiandae quibusdam autem enim ut in possimus ad
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-item__timeline">
+                  <figure class="experience-item__timeline-icon-wrapper">
+                    <img
+                      src="images/timeline-icon.png"
+                      alt="Timeline Logo"
+                      class="experience-item__timeline-icon"
+                    />
+                  </figure>
+                  <div class="experience-item__timeline-vertical-bar"></div>
+                </div>
+                <div class="experience-item__container">
+                  <div class="experience-item__metainfo">
+                    <div class="experience-item__date-location">
+                      <p class="extra-light-text experience-item__date-color">
+                        Sep 2014 - Aug 2015
+                      </p>
+                      <figure class="experience-item__location-icon-wrapper">
+                        <img
+                          src="images/experience-location.svg"
+                          alt="Experience Location"
+                          class="experience-item__location-icon"
+                        />
+                      </figure>
+                      <p
+                        class="extra-light-text experience-item__location-color"
+                      >
+                        Mountain View
                       </p>
                     </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="experience-item">
-                    <div class="experience-metainfo">
-                      <div class="date-location">
-                        <p class="extra-light-text date-color">
-                          Sep 2010 - Jul 2013
-                        </p>
-                        <figure class="experience-a-icon">
-                          <img
-                            src="images/experience-location.svg"
-                            alt="Experience Location"
-                          />
-                        </figure>
-                        <p class="extra-light-text location-color">Berlin</p>
-                      </div>
-                      <div class="experience-info">
-                        <figure class="experience-icon">
-                          <img
-                            src="images/vectornator.svg"
-                            alt="Vectornator Logo"
-                          />
-                        </figure>
-                        <div class="experience-content">
-                          <p class="light-text">Design System Architect</p>
-                          <p class="dark-text">Vectornator</p>
-                        </div>
+                    <div class="experience-item__info">
+                      <figure class="experience-item__icon-wrapper">
+                        <img
+                          src="images/google.png"
+                          alt="Google Icon"
+                          class="experience-item__icon"
+                        />
+                      </figure>
+                      <div class="experience-item__content">
+                        <p class="light-text">Design System Architect</p>
+                        <p class="dark-text">Google</p>
                       </div>
                     </div>
-                    <div class="experience-description">
-                      <p class="extra-light-text">
-                        Non in fugiat aut consequatur deleniti. Consequuntur
-                        impedit modi asperiores impedit ut ea aut eligendi
-                        doloremque. Fugit laborum ducimus hic tempore velit. Sed
-                        vitae et corrupti omnis temporibus. Unde voluptas
-                        quaerat ea rerum aspernatur autem assumenda animi fugit.
-                        Omnis laborum velit voluptatum similique accusantium
-                        eveniet voluptatem.
+                  </div>
+                  <div class="experience-item__description">
+                    <p class="extra-light-text">
+                      Ut molestias animi. Neque voluptate velit corporis
+                      adipisci voluptate et qui sed neque. Inventore eos non.
+                      Qui eveniet quo incidunt nemo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-item">
+                <div class="experience-item__timeline">
+                  <figure class="experience-item__timeline-icon-wrapper">
+                    <img
+                      src="images/timeline-icon.png"
+                      alt="Timeline Logo"
+                      class="experience-item__timeline-icon"
+                    />
+                  </figure>
+                </div>
+                <div class="experience-item__container">
+                  <div class="experience-item__metainfo">
+                    <div class="experience-item__date-location">
+                      <p class="extra-light-text experience-item__date-color">
+                        Sep 2010 - Jul 2013
+                      </p>
+                      <figure class="experience-item__location-icon-wrapper">
+                        <img
+                          src="images/experience-location.svg"
+                          alt="Experience Location"
+                          class="experience-item__location-icon"
+                        />
+                      </figure>
+                      <p
+                        class="extra-light-text experience-item__location-color"
+                      >
+                        Berlin
                       </p>
                     </div>
+                    <div class="experience-item__info">
+                      <figure class="experience-item__icon-wrapper">
+                        <img
+                          src="images/vectornator.svg"
+                          alt="Vectornator Logo"
+                          class="experience-item__icon"
+                        />
+                      </figure>
+                      <div class="experience-item__content">
+                        <p class="light-text">Design System Architect</p>
+                        <p class="dark-text">Vectornator</p>
+                      </div>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                  <div class="experience-item__description">
+                    <p class="extra-light-text">
+                      Non in fugiat aut consequatur deleniti. Consequuntur
+                      impedit modi asperiores impedit ut ea aut eligendi
+                      doloremque. Fugit laborum ducimus hic tempore velit. Sed
+                      vitae et corrupti omnis temporibus. Unde voluptas quaerat
+                      ea rerum aspernatur autem assumenda animi fugit. Omnis
+                      laborum velit voluptatum similique accusantium eveniet
+                      voluptatem.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="main-wrapper">
           <div class="timeline">
-            <figure class="timeline-icon">
-              <img src="images/timeline-icon.svg" alt="Timeline Logo" />
+            <figure class="timeline__icon-wrapper">
+              <img
+                src="images/timeline-icon.png"
+                alt="Timeline Logo"
+                class="timeline__icon"
+              />
             </figure>
-            <div class="vertical-bar"></div>
+            <div class="timeline__vertical-bar"></div>
           </div>
           <div class="education">
-            <p class="heading">Education</p>
-            <div class="education-wrapper">
+            <p class="education__heading">Education</p>
+            <div class="education__education-wrapper">
               <div class="education-card">
-                <div class="education-info">
-                  <figure class="education-icon">
-                    <img src="images/memorisely.svg" alt="Memorisely Logo" />
+                <div class="education-card__info">
+                  <figure class="education-card__icon-wrapper">
+                    <img
+                      src="images/memorisely.svg"
+                      alt="Memorisely Logo"
+                      class="education-card__icon"
+                    />
                   </figure>
-                  <p class="dark-text education-content-title">Memorisely</p>
+                  <p class="dark-text education-card__title">Memorisely</p>
                 </div>
-                <div class="education-content">
+                <div class="education-card__content">
                   <p class="dark-text">Build a design system</p>
                   <p class="light-text">Oct 2021</p>
                 </div>
               </div>
               <div class="education-card">
-                <div class="education-info">
-                  <figure class="education-icon">
-                    <img src="images/ux.svg" alt="UX Logo" />
+                <div class="education-card__info">
+                  <figure class="education-card__icon-wrapper">
+                    <img
+                      src="images/ux.svg"
+                      alt="UX Logo"
+                      class="education-card__icon"
+                    />
                   </figure>
-                  <p class="dark-text education-content-title">UX Academy</p>
+                  <p class="dark-text education-card__title">UX Academy</p>
                 </div>
-                <div class="education-content">
+                <div class="education-card__content">
                   <p class="dark-text">UX Design Certificate</p>
                   <p class="light-text">Feb 2020</p>
                 </div>
               </div>
               <div class="education-card">
-                <div class="education-info">
-                  <figure class="education-icon">
-                    <img src="images/c.svg" alt="C Logo" />
+                <div class="education-card__info">
+                  <figure class="education-card__icon-wrapper">
+                    <img
+                      src="images/c.svg"
+                      alt="C Logo"
+                      class="education-card__icon"
+                    />
                   </figure>
-                  <p class="dark-text education-content-title">Coursera</p>
+                  <p class="dark-text education-card__title">Coursera</p>
                 </div>
-                <div class="education-content">
+                <div class="education-card__content">
                   <p class="dark-text">Usera Research Course</p>
                   <p class="light-text">Dec 2019</p>
                 </div>
@@ -466,35 +642,45 @@
         </div>
         <div class="main-wrapper">
           <div class="timeline">
-            <figure class="timeline-icon">
-              <img src="images/timeline-icon.svg" alt="Timeline Icon" />
+            <figure class="timeline__icon-wrapper">
+              <img
+                src="images/timeline-icon.png"
+                alt="Timeline Icon"
+                class="timeline__icon"
+              />
             </figure>
-            <div class="vertical-bar"></div>
+            <div class="timeline__vertical-bar"></div>
           </div>
           <div class="skills">
-            <p class="heading">Skills</p>
-            <div class="skills-wrapper">
+            <p class="skills__heading">Skills</p>
+            <div class="skills__skills-wrapper">
               <div class="skill-category">
-                <div class="skill-category-info">
-                  <figure class="skill-category-icon">
-                    <img src="images/design-icon.svg" alt="Design Icon" />
+                <div class="skill-category__info">
+                  <figure class="skill-category__icon-wrapper">
+                    <img
+                      src="images/design-icon.svg"
+                      alt="Design Icon"
+                      class="skill-category__icon"
+                    />
                   </figure>
                   <p class="dark-text">Design</p>
                 </div>
-                <div class="dark-text design-color skillname-wrapper">
-                  <div class="first-elem skillname-double-horizontal">
+                <div
+                  class="dark-text skill-category__design-color skill-category__skillname-wrapper"
+                >
+                  <div class="first-elem skillname__double-horizontal">
                     <div class="skillname">
                       <p>Web Design</p>
                     </div>
-                    <div class="vertical-line"></div>
+                    <div class="skillname__vertical-line"></div>
                     <div class="skillname">
                       <p>Mobile Design</p>
                     </div>
                   </div>
-                  <div class="skillname-single">
+                  <div class="skillname__single">
                     <p>User Experience</p>
                   </div>
-                  <div class="skillname-single">
+                  <div class="skillname__single">
                     <ul>
                       <li>
                         <p>Wireframing</p>
@@ -507,26 +693,29 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="last-elem skillname-single">
+                  <div class="skillname__last-elem skillname__single">
                     <p>Design System</p>
                   </div>
                 </div>
               </div>
               <div class="skill-category">
-                <div class="skill-category-info">
-                  <figure class="skill-category-icon">
+                <div class="skill-category__info">
+                  <figure class="skill-category__icon-wrapper">
                     <img
                       src="images/development-icon.svg"
                       alt="Development Icon"
+                      class="skill-category__icon"
                     />
                   </figure>
                   <p class="dark-text">Development</p>
                 </div>
-                <div class="dark-text development-color skillname-wrapper">
-                  <div class="first-elem skillname-single">
+                <div
+                  class="dark-text skill-category__development-color skill-category__skillname-wrapper"
+                >
+                  <div class="skillname__first-elem skillname__single">
                     <p>React JS</p>
                   </div>
-                  <div class="skillname-single">
+                  <div class="skillname__single">
                     <ul>
                       <li>
                         <p>Chakra UI</p>
@@ -539,25 +728,25 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="skillname-double-horizontal">
+                  <div class="skillname__double-horizontal">
                     <div class="skillname">
                       <p>Type Script</p>
                     </div>
-                    <div class="vertical-line"></div>
+                    <div class="skillname__vertical-line"></div>
                     <div class="skillname">
                       <p>Next JS</p>
                     </div>
                   </div>
-                  <div class="last-elem skillname-double-horizontal">
+                  <div class="last-elem skillname__double-horizontal">
                     <div class="skillname">
                       <p>HTML</p>
                     </div>
-                    <div class="vertical-line"></div>
-                    <div class="skillname-double-vertical">
+                    <div class="skillname__vertical-line"></div>
+                    <div class="skillname__double-vertical">
                       <div class="skillname">
                         <p>CSS</p>
                       </div>
-                      <div class="horizontal-line"></div>
+                      <div class="skillname__horizontal-line"></div>
                       <div class="skillname">
                         <p>JS</p>
                       </div>
@@ -570,147 +759,223 @@
         </div>
         <div class="main-wrapper">
           <div class="timeline">
-            <figure class="timeline-icon">
-              <img src="images/timeline-icon.svg" alt="Timeline Icon" />
+            <figure class="timeline__icon-wrapper">
+              <img
+                src="images/timeline-icon.png"
+                alt="Timeline Icon"
+                class="timeline__icon"
+              />
             </figure>
           </div>
           <div class="tools">
-            <p class="heading">Tools</p>
-            <div class="tools-wrapper-lg">
-              <div class="tools-row1">
-                <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/figma-logo.svg" alt="Figma Logo" />
+            <p class="tools__heading">Tools</p>
+            <div class="tools__tools-wrapper-lg">
+              <div class="tools__first-row">
+                <div class="tool-card tool-card__first-elem">
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/figma-logo.svg"
+                      alt="Figma Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Figma</p>
                   <p class="extra-light-text">UI Design, prototyping</p>
                 </div>
                 <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/maze.svg" alt="Maze Logo" />
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/maze.svg"
+                      alt="Maze Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Maze</p>
                   <p class="extra-light-text">Product research</p>
                 </div>
                 <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/spline.svg" alt="Spline Logo" />
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/spline.svg"
+                      alt="Spline Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Spline</p>
                   <p class="extra-light-text">3D Design</p>
                 </div>
-                <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/zeplin.svg" alt="Zeplin Logo" />
+                <div class="tool-card tool-card__last-elem">
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/zeplin.svg"
+                      alt="Zeplin Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Zeplin</p>
                   <p class="extra-light-text">Design workspace</p>
                 </div>
               </div>
-              <div class="tools-row2">
-                <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/vectornator.svg" alt="Vectornator Logo" />
+              <div class="tools__second-row">
+                <div class="tool-card-small tool-card-small__first-elem">
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/vectornator.svg"
+                      alt="Vectornator Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Vectornator</p>
                   <p class="extra-light-text">Graphic Design</p>
                 </div>
                 <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/rotato.svg" alt="Rotato Logo" />
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/rotato.svg"
+                      alt="Rotato Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Rotato</p>
                   <p class="extra-light-text">Mockups</p>
                 </div>
                 <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/vscode.svg" alt="VS Code Icon" />
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/vscode.svg"
+                      alt="VS Code Icon"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">VS Code</p>
                   <p class="extra-light-text">Code Editor</p>
                 </div>
                 <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/xcode.svg" alt="Xcode Icon" />
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/xcode.svg"
+                      alt="Xcode Icon"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Xcode</p>
                   <p class="extra-light-text">iOS Development</p>
                 </div>
-                <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/notion.svg" alt="Notion Icon" />
+                <div class="tool-card-small tool-card-small__last-elem">
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/notion.svg"
+                      alt="Notion Icon"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Notion</p>
                   <p class="extra-light-text">Project Management</p>
                 </div>
               </div>
             </div>
-            <div class="tools-wrapper-sm">
-              <div class="tools-row1">
-                <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/figma-logo.svg" alt="Figma Logo" />
+            <div class="tools__tools-wrapper-sm">
+              <div class="tools__first-row">
+                <div class="tool-card tool-card__first-elem">
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/figma-logo.svg"
+                      alt="Figma Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Figma</p>
                   <p class="extra-light-text">UI Design, prototyping</p>
                 </div>
                 <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/maze.svg" alt="Maze Logo" />
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/maze.svg"
+                      alt="Maze Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Maze</p>
                   <p class="extra-light-text">Product research</p>
                 </div>
-                <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/spline.svg" alt="Spline Logo" />
+                <div class="tool-card tool-card__last-elem">
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/spline.svg"
+                      alt="Spline Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Spline</p>
                   <p class="extra-light-text">3D Design</p>
                 </div>
               </div>
-              <div class="tools-row2">
-                <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/vectornator.svg" alt="Vectornator Logo" />
+              <div class="tools__second-row">
+                <div class="tool-card-small tool-card-small__first-elem">
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/vectornator.svg"
+                      alt="Vectornator Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Vectornator</p>
                   <p class="extra-light-text">Graphic Design</p>
                 </div>
                 <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/rotato.svg" alt="Rotato Logo" />
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/rotato.svg"
+                      alt="Rotato Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Rotato</p>
                   <p class="extra-light-text">Mockups</p>
                 </div>
-                <div class="tool-card">
-                  <figure class="tool-icon">
-                    <img src="images/zeplin.svg" alt="Zeplin Logo" />
+                <div class="tool-card tool-card__last-elem">
+                  <figure class="tool-card__icon-wrapper">
+                    <img
+                      src="images/zeplin.svg"
+                      alt="Zeplin Logo"
+                      class="tool-card__icon"
+                    />
                   </figure>
                   <p class="dark-text">Zeplin</p>
                   <p class="extra-light-text">Design workspace</p>
                 </div>
               </div>
 
-              <div class="tools-row3">
-                <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/vscode.svg" alt="VS Code Icon" />
+              <div class="tools__third-row">
+                <div class="tool-card-small tool-card-small__first-elem">
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/vscode.svg"
+                      alt="VS Code Icon"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">VS Code</p>
                   <p class="extra-light-text">Code Editor</p>
                 </div>
                 <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/xcode.svg" alt="Xcode Icon" />
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/xcode.svg"
+                      alt="Xcode Icon"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Xcode</p>
                   <p class="extra-light-text">iOS Development</p>
                 </div>
-                <div class="tool-card-small">
-                  <figure class="tool-icon-small">
-                    <img src="images/notion.svg" alt="Notion Logo" />
+                <div class="tool-card-small tool-card-small__last-elem">
+                  <figure class="tool-card-small__icon-wrapper">
+                    <img
+                      src="images/notion.svg"
+                      alt="Notion Logo"
+                      class="tool-card-small__icon"
+                    />
                   </figure>
                   <p class="dark-text">Notion</p>
                   <p class="extra-light-text">Project Management</p>
