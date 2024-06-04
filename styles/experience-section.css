@@ -40,6 +40,11 @@
   height: 40px;
 }
 
+.experience-item__icon-wrapper:hover {
+  scale: 1.2;
+  transition: scale 0.4s;
+}
+
 .experience-item__icon {
   max-width: 100%;
   max-height: 100%;

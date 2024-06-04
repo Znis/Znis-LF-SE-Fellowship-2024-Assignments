@@ -21,6 +21,11 @@
   background-color: #f7f9fc;
 }
 
+.education-card:hover {
+  scale: 1.05;
+  transition: scale 0.4s;
+}
+
 .education-card__info {
   display: flex;
   gap: 16px;

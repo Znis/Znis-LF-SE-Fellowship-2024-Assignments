@@ -21,6 +21,11 @@
   border-radius: 8.08px 0px 0px 8.08px;
 }
 
+.project-card:hover {
+  scale: 1.05;
+  transition: scale 0.4s;
+}
+
 .project-card__project-info {
   display: flex;
   gap: 16px;

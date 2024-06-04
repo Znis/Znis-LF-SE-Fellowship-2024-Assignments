@@ -1,13 +1,12 @@
 .aside-section {
   display: flex;
-  flex-direction: column;
   flex: 1;
+  flex-direction: column;
 }
 
 .aside-section__container {
   display: flex;
   flex-direction: column;
-  flex: 1;
   gap: 32px;
   padding: 32px 48px;
   background-color: #f7f9fc;
@@ -19,6 +18,8 @@
   align-items: center;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
+  width: 14rem;
+  margin: 0 auto;
 }
 
 .aside-section__name {
@@ -36,7 +37,7 @@
 }
 
 .aside-section__quote-author {
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .aside-section__contact,
@@ -63,6 +64,8 @@
   font-size: 18px;
   line-height: 24px;
   align-items: center;
+  width: 14rem;
+  margin: 0 auto;
 }
 
 .aside-section__quote {
@@ -97,7 +100,6 @@
 }
 
 .aside-section__horizontal-bar {
-  width: 100%;
   height: 1px;
   background-color: #e2e6ee;
 }
@@ -116,6 +118,7 @@
 .socials__info-div,
 .languages__info-div {
   flex: 1;
+  min-width: 0;
   display: flex;
   gap: 16px;
 }
@@ -131,6 +134,12 @@
   border-radius: 50%;
   background-color: #e2e6ee;
   overflow: hidden;
+}
+.contact__icon-circle:hover,
+.socials__icon-circle:hover {
+  scale: 1.2;
+  outline: 1px solid #516cf7;
+  transition: scale 0.4s;
 }
 
 .contact__icon,
@@ -149,6 +158,18 @@
   width: 32px;
 }
 
+.languages__icon-wrapper:hover {
+  scale: 1.2;
+  transition: scale 0.4s;
+}
+
+.contact__icon-circle:hover,
+.socials__icon-circle:hover {
+  scale: 1.2;
+  outline: 1px solid #516cf7;
+  transition: scale 0.4s;
+}
+
 .languages__icon {
   max-width: 100%;
   max-height: 100%;
@@ -158,6 +179,9 @@
 .socials__info,
 .languages__info {
   display: flex;
+  min-width: 0;
+  height: 4rem;
+  overflow-wrap: break-word;
   flex-direction: column;
   gap: 4px;
 }
