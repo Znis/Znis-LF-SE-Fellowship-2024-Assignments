@@ -1,22 +1,21 @@
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .timeline-icon {
-    height: 48px;
-    width: 48px;
-    margin: 4px 0 0 10px;
-    z-index: 2;
-  }
-  .timeline-icon img {
-    max-height: 100%;
-    max-width: 100%;
-  }
-  .vertical-bar {
-    width: 1px;
-    height: 100%;
-    margin: -30px 0px;
-    background-color: #e2e6ee;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.timeline-icon {
+  height: 48px;
+  width: 48px;
+  margin: 4px 0 0 10px;
+  z-index: 2;
+}
+.timeline-icon img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.vertical-bar {
+  width: 1px;
+  height: 100%;
+  margin: -30px 0px;
+  background-color: #e2e6ee;
+}
