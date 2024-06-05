@@ -1,0 +1,41 @@
+
+
+
+@media (max-width: 576px) {
+    body {
+      flex-direction: column;
+    }
+    .quote {
+      text-align: center;
+    }
+    .row1,
+    .row2 {
+      display: flex;
+      flex-direction: row;
+    }
+    .project-wrapper {
+      flex-direction: column;
+    }
+  
+    .experience-item {
+      flex-direction: column;
+    }
+    .education-wrapper {
+      flex-direction: column;
+    }
+    .skillname-wrapper {
+      flex-direction: column;
+    }
+    .vertical-line {
+      width: 1px;
+      height: 25px;
+      background-color: #e2e6ee;
+    }
+    .tools-wrapper-sm {
+      display: flex;
+    }
+    .tools-wrapper-lg {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,78 @@
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 32px;
+    padding-bottom: 48px;
+  }
+  .tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+
+  .tool-card {
+    display: flex;
+    flex: 1 0 20%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px 0px 0px 0px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #f7f9fc;
+  }
+
+  .tool-card:hover {
+    scale: 1.05;
+    transition: scale 0.4s;
+  }
+  
+  .tool-icon {
+    height: 48px;
+    width: 48px;
+  }
+  .tool-icon img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .tool-card-small {
+    display: flex;
+    flex: 1 0 15%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 0px 8px;
+    padding: 16px;
+    gap: 8px;
+    background-color: #f7f9fc;
+  }
+
+  .tool-card-small:hover {
+    scale: 1.05;
+    transition: scale 0.4s;
+  }
+
+  .tool-icon-small {
+    height: 32px;
+    width: 32px;
+  }
+  .tool-icon-small img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .first-elem {
+    border-radius: 8px 0px 0px 0px;
+  }
+  .last-elem {
+    border-radius: 0px 8px 0px 0px;
+  }
+  .first-elem-small {
+    border-radius: 0px 0px 0px 8px;
+  }
+  .last-elem-small {
+    border-radius: 0px 0px 8px 0px;
+  }

@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+}
+
+.main-container {
+  flex: 2;
+  padding: 64px 48px 64px 32px;
+}
+.main-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+
+
